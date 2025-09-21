@@ -1,0 +1,711 @@
+<html>
+    <head>
+        <title>Car Space</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/all.css">
+    </head>
+    <body style="height: 6000px; background-color: rgb(131, 131, 131); font-family: 'Times New Roman', Times, serif;">
+        <header><!-- header -->
+            <nav style="background: black;" class="navbar navbar-dark navbar-expand-lg fixed-top p-1">
+                <div class="container-fluid">
+                    <a style="width: 200px ; height: 75px;" class="navbar-brand me-1 p-0" href="#"><img src="image/main logo2b.png" class="h-100 w-100" alt="logo"></a>
+                    <div style="width: 1px; height: 75px;" class="border-start me-2 d-none d-lg-block "></div>
+                    <button style="width:125px ;" class="navbar-toggler text-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon "></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <button type="button" class="btn text-uppercase text-white w-100 text-start">Home</button>
+                            </li>
+                            <li class="nav-item">
+                                <button type="button" class="btn text-uppercase text-white w-100 text-start">about us</button>
+                            </li>
+                                <li class="nav-item dropdown">
+                                    <button type="button" class="btn text-uppercase text-white w-100 text-start dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+                                            Cars
+                                        </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Sedans</a></li>
+                                        <li><a class="dropdown-item" href="#">Crossovers</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="#">SUVs</a></li>
+                                        <li><a class="dropdown-item" href="#">Pickup Trucks</a></li>
+                                        <li><a class="dropdown-item" href="#">Sports Cars</a></li>
+                                        <li><a class="dropdown-item" href="#">Electric Cars</a></li>
+                                    </ul>
+                                </li>
+                            <li class="nav-item">
+                                <button type="button" class="btn text-uppercase text-white w-100 text-start">contact us</button>
+                            </li>
+                        </ul>
+                        <form class="d-flex my-2" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-primary me-2" type="submit">Search</button>
+                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header><!-- /header -->
+        <div  class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"><!-- login -->
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-3 text-primary fst-italic" id="staticBackdropLabel">Log in</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Enter your password">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="form-check me-auto">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Remember me</label>
+                        </div>
+                        <button type="button" style="width: 99% ;" class="btn btn-primary mx-auto" data-bs-dismiss="modal">Log in</button>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /login -->
+        <main><!-- main -->
+            <div id="carouselExampleCaptions"  class="carousel slide"  data-bs-ride="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner ">
+                    <div class="carousel-item active">
+                        <img src="image/car main.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption border bg-dark bg-opacity-50 mb-3 d-none d-md-block">
+                            <h5 class="fs-3 text-uppercase text-primary">BMW</h5>
+                            <p>BMW is a German luxury automaker known for innovation, performance, <br> and “The Ultimate Driving Machine.</p>
+                            <button class="btn btn-outline-primary">Call Us</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/2.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption border bg-dark bg-opacity-50 mb-3 d-none d-md-block">
+                            <h5 class="fs-3 text-uppercase text-primary">Bugatti</h5>
+                            <p>Bugatti is a French luxury carmaker renowned for crafting ultra-exclusive hypercars <br class="d-none d-lg-block"> that blend extreme speed, elegance, and engineering excellence.</p>
+                            <button class="btn btn-outline-primary">Call Us</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/car 3 main.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption border bg-dark bg-opacity-50 mb-3 d-none d-md-block">
+                            <h5 class="fs-3 text-uppercase text-primary">Audi</h5>
+                            <p>Audi is a German premium automaker recognized for its advanced <br> technology, sleek design, and the slogan</p>
+                            <button class="btn btn-outline-primary">Call Us</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/car 4 main.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption border bg-dark bg-opacity-50 mb-3 d-none d-md-block">
+                            <h5 class="fs-3 text-uppercase text-primary">tesla</h5>
+                            <p>Tesla is an American electric carmaker famous for its innovation, performance, <br> and commitment to sustainable energy.</p>
+                            <button class="btn btn-outline-primary">Call Us</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div> 
+        </main><!-- /main -->
+        <aside style="font-size: 50px; height: 330px; z-index: 10;" class="d-flex flex-column justify-content-between position-fixed top-50 end-0 translate-middle-y opacity-75"><!-- /aside -->
+            <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
+            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </aside><!-- /aside -->
+        <div id="welcome" class="container-fluid rounded-bottom pt-4 pb-3 px-3 bg-dark bg-gradient"><!-- welcome -->
+            <h3 class="text-primary fs-3 text-capitalize">welcome</h3>
+            <p class="text-light">Welcome to Car Space – the home of premium cars, modern design, and driving excellence. From luxury sedans and powerful SUVs to cutting-edge electric vehicles, our showroom brings you a collection crafted for performance, comfort, and style. Step inside and explore a world where every car is more than just a ride – it’s an experience built for your journey.</p>
+            <button class="btn btn-primary text-capitalize">learn more</button>
+        </div><!-- /welcome -->
+        <hr class="my-3">
+        <section> <!-- models -->
+            <div id="title" class="rounded container-fluid bg-dark text-center py-5">
+                <h2 class="text-capitalize fs-2 fw-bold text-light my-4">the most famous models in our showroom</h2>
+            </div>
+
+            <div class="accordion accordion-flush mt-4 p-1 pt-2" id="accordionFlushExample">
+                <div style="background-color: rgb(222, 222, 222);" class="accordion-item my-1 rounded-1">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button style="background-color: rgb(59, 59, 59);" class="bg-dark bg-gradient fst-italic accordion-button collapsed fs-5 rounded-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Sedans
+                        </button>   
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Sedans are four-door cars designed to combine comfort, style, and practicality. They offer roomy interiors and smooth handling for everyday use. Fuel-efficient and reliable, they are perfect for city and highway driving. From family cars to luxury models, sedans remain a timeless favorite.                    
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item my-1 rounded-1" style="background-color: rgb(222, 222, 222);">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button style="background-color: rgb(59, 59, 59);" class="bg-dark bg-gradient fst-italic accordion-button collapsed fs-5 rounded-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Sports Cars
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Sports cars are built for speed, style, and thrilling performance. With powerful engines, sharp handling, and sleek designs, they offer an exciting driving experience and a strong road presence. From timeless classics to modern supercars, sports cars deliver pure driving pleasure for enthusiasts who crave excitement.             
+                        </div>
+                    </div>
+                </div>
+                <div style="background-color: rgb(222, 222, 222);" class="accordion-item rounded-1">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button style="background-color: rgb(59, 59, 59);" class="bg-dark bg-gradient fst-italic accordion-button collapsed fs-5 rounded-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">                  
+                            Electric Cars
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Electric cars are powered entirely by electricity, offering a clean and eco-friendly alternative to traditional vehicles. They deliver instant acceleration, quiet performance, and lower running costs. With advanced technology and growing charging networks, they are becoming more practical every day. Electric cars represent the future of driving, combining innovation with sustainability.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section> <!-- /models -->
+        <hr class="my-3">
+        <section><!-- Translate -->
+            <div><!-- translate1 -->
+            <div id="title" class="rounded container-fluid bg-dark text-center py-4">
+                <h2 class="text-capitalize fs-1 text-light">translate from arabic to english</h2>
+            </div>
+            
+            <div class="container-fluid bg-dark bg-gradient py-4 px-3">
+                <div class="">
+                    <p class="text-light fs-3 text-capitalize mb-0">write and translate <span class="text-primary fw-bold fs-3 text-capitalize">press here</span></p>
+                </div>
+                <button style="width:75px;" type="button" id="copy1" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Copy
+                </button>
+                <div style="width: fit-content; margin-left: 90px; display: none;" id="copied1" class="rounded-pill bg-light px-4">
+                    Copied!
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title text-capitalize text-primary fs-4" id="exampleModalLabel">car showroom</h1>
+                                <button type="button" id="X" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body fs-5">
+                                The message copied
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" id="close" class="btn btn-dark" data-bs-dismiss="modal">Ok</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="form-floating">
+                        <textarea style="height: 125px; background-color: rgb(203, 203, 203);" class="form-control mt-4" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <label style="color: black; " class="fs-5 ms-5 pt-3" for="exampleFormControlTextarea1">Translate:</label>
+                    </div>
+                </div>
+            </div>
+            </div><!-- /translate1 -->
+            <hr class="my-3">
+            <div><!-- translate2 -->
+                <div id="title" class="rounded container-fluid bg-dark text-center py-4">
+                    <h2 class="text-capitalize fs-1 text-light">translate from arabic to frensh</h2>
+                </div>
+                
+                <div class="container-fluid bg-dark bg-gradient py-4 px-3">
+                    <div class="">
+                        <p class="text-light fs-3 text-capitalize mb-0">write and translate <span class="text-primary fw-bold fs-3 text-capitalize">press here</span></p>
+                    </div>
+                    <button style="width:75px;" type="button" id="copy2" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Copy
+                    </button>
+                    <div style="width: fit-content; margin-left: 90px; display: none;" id="copied2" class="rounded-pill bg-light px-4">
+                        Copied!
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title text-capitalize text-primary fs-4" id="exampleModalLabel">car showroom</h1>
+                                    <button type="button" id="X" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body fs-5">
+                                    The message copied
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" id="close" class="btn btn-dark" data-bs-dismiss="modal">Ok</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="form-floating">
+                            <textarea style="height: 125px; background-color: rgb(203, 203, 203);" class="form-control mt-4" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <label style="color: black; " class="fs-5 ms-5 pt-3" for="exampleFormControlTextarea1">Translate:</label>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /translate2 -->
+            <hr class="my-3">
+            <div><!-- translate3 -->
+                <div id="title" class="rounded container-fluid bg-dark text-center py-4">
+                    <h2 class="text-capitalize fs-1 text-light">translate from arabic to german</h2>
+                </div>
+                
+                <div class="container-fluid bg-dark bg-gradient py-4 px-3">
+                    <div class="">
+                        <p class="text-light fs-3 text-capitalize mb-0">write and translate <span class="text-primary fw-bold fs-3 text-capitalize">press here</span></p>
+                    </div>
+                    <button style="width:75px;" type="button" id="copy3" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Copy
+                    </button>
+                    <div style="width: fit-content; margin-left: 90px; display: none;" id="copied3" class="rounded-pill bg-light px-4">
+                        Copied!
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title text-capitalize text-primary fs-4" id="exampleModalLabel">car showroom</h1>
+                                    <button type="button" id="X" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body fs-5">
+                                    The message copied
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" id="close" class="btn btn-dark" data-bs-dismiss="modal">Ok</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="form-floating">
+                            <textarea style="height: 125px; background-color: rgb(203, 203, 203);" class="form-control mt-4" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <label style="color: black; " class="fs-5 ms-5 pt-3" for="exampleFormControlTextarea1">Translate:</label>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /translate3 -->
+        </section><!-- /Translate -->
+        <hr class="my-3">
+        <div style="background-image: url(image/fixed1.png); height: 50vh; background-attachment: fixed; background-repeat: no-repeat; background-size: cover;" class="container-fluid fixed-image">
+        </div>
+        <section class="popular"><!-- popular -->
+            <div class="container-fluid bg-dark text-center mt-5 rounded py-4">
+                <h3 class="fs-3 fw-bold text-light text-capitalize my-2">.. popular cars in our showroom ..</h3>
+            </div>
+            <div style="padding: 20px 0px ;" class="container-fluid">
+                <div class="d-flex flex-wrap justify-content-center align-content-center">                  
+                    <div class="card mx-4 my-5" style="width: 380px; height: 468px; background-color: rgba(255, 255, 255, 0.916);">
+                        <img src="image/card1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 style="background: -webkit-linear-gradient(#000000, #002fff);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color:transparent;" class="card-title fs-3 text-primary mb-0 fw-bold">Tesla</h5>
+                            <a href="#" style="margin-left:200px; width:110px;" class="btn btn-primary mb-3 text-uppercase">Show</a>
+                            <p style="font-size: 17px;" class="card-text">Tesla is an American electric carmaker known for innovation, performance, and sustainable driving.</p>                              
+                        </div>
+                    </div>
+                    <div class="card mx-4 my-5" style="width: 380px; height: 468px; background-color: rgba(255, 255, 255, 0.916);">
+                        <img src="image/card2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 style="background: -webkit-linear-gradient(#000000, #002fff);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color:transparent;" class="card-title fs-3 text-primary mb-0 fw-bold">Audi</h5>
+                            <a href="#" style="margin-left:200px; width:110px;" class="btn btn-primary mb-3 text-uppercase">Show</a>
+                            <p style="font-size: 17px;" class="card-text">Audi is a German luxury automaker known for advanced technology, and premium performance.</p>                              
+                        </div>
+                    </div>
+                    <div class="card mx-4 my-5" style="width: 380px; height: 468px; background-color: rgba(255, 255, 255, 0.916);">
+                        <img src="image/card3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 style="background: -webkit-linear-gradient(#000000, #002fff);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color:transparent;" class="card-title fs-3 text-primary mb-0 fw-bold">BMW</h5>
+                            <a href="#" style="margin-left:200px; width:110px;" class="btn btn-primary mb-3 text-uppercase">Show</a>
+                            <p style="font-size: 17px;" class="card-text">BMW is a German luxury carmaker renowned for performance, and The Ultimate Driving Machine.</p>                              
+                        </div>
+                    </div>
+                    <div class="card mx-4 my-5" style="width: 380px; height: 468px; background-color: rgba(255, 255, 255, 0.916);">
+                        <img src="image/card4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 style="background: -webkit-linear-gradient(#000000, #002fff);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color:transparent;" class="card-title fs-3 text-primary mb-0 fw-bold">Bugatti</h5>
+                            <a href="#" style="margin-left:200px; width:110px;" class="btn btn-primary mb-3 text-uppercase">Show</a>
+                            <p style="font-size: 17px;" class="card-text">Bugatti is a French luxury brand known for ultra-fast and exclusive hypercars.</p>                              
+                        </div>
+                    </div>
+                    <div class="card mx-4 my-5" style="width: 380px; height: 468px; background-color: rgba(255, 255, 255, 0.916);">
+                        <img src="image/card5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 style="background: -webkit-linear-gradient(#000000, #002fff);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color:transparent;" class="card-title fs-3 text-primary mb-0 fw-bold">Ferrari</h5>
+                            <a href="#" style="margin-left:200px; width:110px;" class="btn btn-primary mb-3 text-uppercase">Show</a>
+                            <p style="font-size: 17px;" class="card-text">Ferrari is an Italian luxury brand famous for high-performance sports cars and racing heritage.</p>                              
+                        </div>
+                    </div>
+                    <div class="card mx-4 my-5" style="width: 380px; height: 468px; background-color: rgba(255, 255, 255, 0.916);">
+                        <img src="image/card6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 style="background: -webkit-linear-gradient(#000000, #002fff);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color:transparent;" class="card-title fs-3 text-primary mb-0 fw-bold">Lambergeni</h5>
+                            <a href="#" style="margin-left:200px; width:110px;" class="btn btn-primary mb-3 text-uppercase">Show</a>
+                            <p style="font-size: 17px;" class="card-text">Lamborghini is an Italian luxury brand known for bold design and powerful supercars.</p>                              
+                        </div>
+                    </div>
+                    <div class="card mx-4 my-5" style="width: 380px; height: 468px; background-color: rgba(255, 255, 255, 0.916);">
+                        <img src="image/card7.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 style="background: -webkit-linear-gradient(#000000, #002fff);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color:transparent;" class="card-title fs-3 text-primary mb-0 fw-bold">Mercedes</h5>
+                            <a href="#" style="margin-left:200px; width:110px;" class="btn btn-primary mb-3 text-uppercase">Show</a>
+                            <p style="font-size: 17px;" class="card-text">Mercedes-Benz is a German luxury brand known for elegance and innovation.</p>                              
+                        </div>
+                    </div>
+                    <div class="card mx-4 my-5" style="width: 380px; height: 468px; background-color: rgba(255, 255, 255, 0.916);">
+                        <img src="image/card8.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 style="background: -webkit-linear-gradient(#000000, #002fff);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color:transparent;" class="card-title fs-3 text-primary mb-0 fw-bold">McLaren</h5>
+                            <a href="#" style="margin-left:200px; width:110px;" class="btn btn-primary mb-3 text-uppercase">Show</a>
+                            <p style="font-size: 17px;" class="card-text">McLaren is a British automaker famed for high-performance supercars and racing excellence.</p>                              
+                        </div>
+                    </div>
+        </section><!-- /popular -->
+        <div style="background-image: url(image/fixed2.png); height: 50vh; background-attachment: fixed; background-repeat: no-repeat; background-size: cover;" class="container-fluid fixed-image">
+        </div>
+        <hr class="my-3">
+        <section class="thanks"><!-- thanks -->
+            <div class="container-fluid bg-dark text-center mt-5 rounded py-4">
+                <h3 class="fs-2 fw-bold text-light text-capitalize my-2">.. thanks for ..</h3>
+            </div>
+            <div style="padding: 20px 0px ;" class="container-fluid">
+                <div class="d-flex flex-wrap justify-content-center align-content-center">                  
+                    <div class="card mx-5 my-5 rounded-5 overflow-hidden" style="width: 280px; height: 370px;">
+                        <img src="image/thanks1.jpg" class="card-img rounded-5" alt="...">
+                        <div style="background-color: rgba(0, 0, 0, 0.637);" class="card-img-overlay rounded-5 text-light">                           
+                            <h5 style="color: rgb(195, 195, 195); font-size: 19.7px;" class="card-title text-capitalize">all thanks and appreciation</h5>
+                            <p style="color: rgb(195, 195, 195);" class="card-text text-capitalize"><i class="fa-regular fa-clock"></i> june 22. 2025</p>
+                            <div style="width: 90px; height: 130px; margin-top: 90px;" class=" border rounded-pill overflow-hidden ">
+                                <img src="image/thanks1.jpg " class="card-img rounded-pill" alt="...">
+                            </div>                             
+                            <p class="m-0 mt-2 text-capitalize">eng.islam mohamed</p> 
+                            <p class="m-0 text-capitalize">director of UI/UX</p>                           
+                        </div>
+                    </div>
+                    <div class="card mx-5 my-5 rounded-5 overflow-hidden" style="width: 280px; height: 370px;">
+                        <img src="image/thanks2.jpg" class="card-img" alt="...">
+                        <div style="background-color: rgba(0, 0, 0, 0.637);" class="card-img-overlay rounded-5 text-light">                           
+                            <h5 style="color: rgb(195, 195, 195); font-size: 19.7px;" class="card-title text-capitalize">all thanks and appreciation</h5>
+                            <p style="color: rgb(195, 195, 195);" class="card-text text-capitalize"><i class="fa-regular fa-clock"></i> june 22. 2025</p>
+                            <div style="width: 90px; height: 130px; margin-top: 90px;" class=" border rounded-pill overflow-hidden ">
+                                <img src="image/thanks2.jpg " class="card-img rounded-pill" alt="...">
+                            </div>                             
+                            <p class="m-0 mt-2 text-capitalize">eng.mohamed mahdy</p> 
+                            <p class="m-0 text-capitalize">content creator</p>                           
+                        </div>
+                    </div>
+                    <div class="card mx-5 my-5 rounded-5 overflow-hidden" style="width: 280px; height: 370px;">
+                        <img src="image/thanks3.jpg" class="card-img" alt="...">
+                        <div style="background-color: rgba(0, 0, 0, 0.637);" class="card-img-overlay rounded-5 text-light">                           
+                            <h5 style="color: rgb(195, 195, 195); font-size: 19.7px;" class="card-title text-capitalize">all thanks and appreciation</h5>
+                            <p style="color: rgb(195, 195, 195);" class="card-text text-capitalize"><i class="fa-regular fa-clock"></i> june 22. 2025</p>
+                            <div style="width: 90px; height: 130px; margin-top: 90px;" class=" border rounded-pill overflow-hidden ">
+                                <img src="image/thanks3.jpg " class="card-img rounded-pill" alt="...">
+                            </div>                             
+                            <p class="m-0 mt-2 text-capitalize">eng.omar ahmed</p> 
+                            <p class="m-0 text-capitalize">web developer</p>                           
+                        </div>
+                    </div> 
+                </div>   
+            </div>                                          
+        </section><!-- /thanks -->
+        <section class="news"><!-- news -->
+            <div class="container-fluid text-center py-4">
+                <h3 style="background: -webkit-linear-gradient(#000000, #002fff);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color:transparent; font-size: 40px;" class=" fw-bold text-capitalize my-2">
+                            showroom news
+                </h3>
+            </div>
+            <div style="padding: 20px 0px;" class="container-fluid large d-none d-xl-block">
+                <div class="card my-4 mx-auto overflow-hidden" style="max-width: 80%; max-height: 350px; background-color: rgba(255, 255, 255, 0.916);">
+                    <div class="row g-0 px-2">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 style="background: -webkit-linear-gradient(#000000, #002fff);
+                                          -webkit-background-clip: text;
+                                          -webkit-text-fill-color:transparent;" class="card-title text-uppercase fw-bold fs-2">bmw</h5>                                    
+                                <p class="text-capitalize mb-2">mon, may 25th 2020</p>
+                                <div style="width: 73px; height: 6px;" class="progress ms-2 mb-2">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+                                </div>                                
+                                <p style="font-size: 17px;" class="card-text">BMW is pushing forward with new models, led by the Neue Klasse iX3, an electric SUV offering over 800 km of range and ultra-fast charging, set to launch in Europe in 2026. A new i3 electric sedan, positioned as a 3 Series EV, is also in development. The i4 gains efficiency upgrades and a powerful M60 xDrive trim with 601 hp, while the 2 Series Gran Coupé gets refreshed variants in India. Across its lineup, BMW is adding features like heated seats and the Digital Key, with plans to launch 40+ new models by 2027.</p>
+                                <button class="btn btn-primary mt-xxl-5 mt-xl-4" type="submit"><i class="fa-solid fa-microphone"></i> Podcast</button>
+                                <button class="btn btn-primary mt-xxl-5 mt-xl-4" type="submit"><i class="fa-regular fa-clock"></i> 43 mins</button>
+                                <button class="btn btn-primary mt-xxl-5 mt-xl-4" type="submit"><i class="fa-solid fa-play"></i> Play Episode</button>                              
+                            </div>
+                        </div>
+                        <div style="clip-path: polygon(0% 0%, 200% 1000%, 100% 0%);" class="col-md-4 overflow-hidden">
+                            <img src="image/news1.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="card my-5 mx-auto overflow-hidden" style="max-width: 80%; max-height: 350px; background-color: rgba(255, 255, 255, 0.916);">
+                    <div class="row g-0 px-2">
+                        <div style="clip-path: polygon(0% 500%, 100% 0%, 100% 0% ,0% 0%);" class="col-md-4 overflow-hidden">
+                            <img src="image/news2.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 style="background: -webkit-linear-gradient(#000000, #002fff);
+                                          -webkit-background-clip: text;
+                                          -webkit-text-fill-color:transparent;" class="card-title text-uppercase fw-bold fs-2">bugatti</h5>                                    
+                                <p class="text-capitalize mb-2">mon, may 25th 2020</p>
+                                <div style="width: 73px; height: 6px;" class="progress ms-2 mb-2">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+                                </div>                                
+                                <p style="font-size: 17px;" class="card-text">Bugatti is entering a new era with the Tourbillon, a 1,800 hp hybrid V16 hypercar replacing the Chiron, limited to 250 units with production starting in 2026. The brand also launched the Mistral, the fastest open-top Bugatti at 282 mph, with all 99 units sold. Under its new Programme Solitaire, Bugatti revealed the Brouillard, a bespoke coach-built model, while demand has filled production slots through 2029.</p>
+                                <button class="btn btn-primary mt-xxl-5 mt-xl-4" type="submit"><i class="fa-solid fa-microphone"></i> Podcast</button>
+                                <button class="btn btn-primary mt-xxl-5 mt-xl-4" type="submit"><i class="fa-regular fa-clock"></i> 43 mins</button>
+                                <button class="btn btn-primary mt-xxl-5 mt-xl-4" type="submit"><i class="fa-solid fa-play"></i> Play Episode</button>                              
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="card my-4 mx-auto overflow-hidden" style="max-width: 80%; max-height: 350px; background-color: rgba(255, 255, 255, 0.916);">
+                    <div class="row g-0 px-2">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 style="background: -webkit-linear-gradient(#000000, #002fff);
+                                          -webkit-background-clip: text;
+                                          -webkit-text-fill-color:transparent;" class="card-title text-uppercase fw-bold fs-2">tesla</h5>                                    
+                                <p class="text-capitalize mb-2">mon, may 25th 2020</p>
+                                <div style="width: 73px; height: 6px;" class="progress ms-2 mb-2">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+                                </div>                                
+                                <p style="font-size: 17px;" class="card-text">Tesla is updating its lineup with the new Model Y L in China, a longer six-seater SUV now in deliveries. It has started building its first affordable EVs, aiming for mass production later in 2025. The Cybertruck RWD has been dropped, leaving only AWD and Cyberbeast trims. Meanwhile, Tesla is expanding its robotaxi trials in Arizona, targeting half of the U.S. market by year’s end.</p>
+                                <button class="btn btn-primary mt-xxl-5 mt-xl-4" type="submit"><i class="fa-solid fa-microphone"></i> Podcast</button>
+                                <button class="btn btn-primary mt-xxl-5 mt-xl-4" type="submit"><i class="fa-regular fa-clock"></i> 43 mins</button>
+                                <button class="btn btn-primary mt-xxl-5 mt-xl-4" type="submit"><i class="fa-solid fa-play"></i> Play Episode</button>                              
+                            </div>
+                        </div>
+                        <div style="clip-path: polygon(0% 0%, 200% 1000%, 100% 0%);" class="col-md-4 overflow-hidden">
+                            <img src="image/news3.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            <div style="padding: 20px 30px;" class="container-fluid small d-block d-xl-none">
+                <div class="card my-3 mx-auto overflow-hidden" style="max-width: 600px ; background-color: rgba(255, 255, 255, 0.916);">
+                    <div class="row g-0 my-3">
+                        <div class="col-xl-4 overflow-hidden">
+                            <img src="image/news1.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-xl-8">
+                            <div class="card-body">
+                                <h5 style="background: -webkit-linear-gradient(#000000, #002fff);
+                                          -webkit-background-clip: text;
+                                          -webkit-text-fill-color:transparent;" class="card-title text-uppercase fw-bold fs-2">bmw</h5>                                    
+                                <p class="text-capitalize mb-2">mon, may 25th 2020</p>
+                                <div style="width: 73px; height: 6px;" class="progress ms-2 mb-2">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+                                </div>      
+                                <p style="font-size: 17px;" class="card-text d-block d-sm-none ">BMW is pushing forward with new models, led by the Neue Klasse iX3, an electric SUV offering over 800 km of range and ultra-fast charging, set to launch in Europe in 2026. A new i3 electric sedan, positioned as a 3 Series EV, is also in development. <a class="text-primary text-decoration-none" href="">Read more...</a> </p>
+                                <p style="font-size: 17px;" class="card-text d-none d-sm-block ">BMW is pushing forward with new models, led by the Neue Klasse iX3, an electric SUV offering over 800 km of range and ultra-fast charging, set to launch in Europe in 2026. A new i3 electric sedan, positioned as a 3 Series EV, is also in development. The i4 gains efficiency upgrades and a powerful M60 xDrive trim with 601 hp, while the 2 Series Gran Coupé gets refreshed variants in India. Across its lineup, BMW is adding features like heated seats and the Digital Key, with plans to launch 40+ new models by 2027.</p>
+                                <button class="btn btn-primary mt-xxl-5 mt-xl-4 " type="submit"><i class="fa-solid fa-microphone"></i> Podcast</button>
+                                <button class="btn btn-primary mt-xxl-5 mt-xl-4 " type="submit"><i class="fa-regular fa-clock"></i> 43 mins</button>
+                                <button class="margentop btn btn-primary mt-xxl-5 mt-xl-4" type="submit"><i class="fa-solid fa-play"></i> Play Episode</button>                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card my-3 mx-auto overflow-hidden" style="max-width: 600px ; background-color: rgba(255, 255, 255, 0.916);">
+                    <div class="row g-0 my-3">
+                        <div class="col-xl-4 overflow-hidden">
+                            <img src="image/news2.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-xl-8">
+                            <div class="card-body">
+                                <h5 style="background: -webkit-linear-gradient(#000000, #002fff);
+                                          -webkit-background-clip: text;
+                                          -webkit-text-fill-color:transparent;" class="card-title text-uppercase fw-bold fs-2">bugatti</h5>                                    
+                                <p class="text-capitalize mb-2">mon, may 25th 2020</p>
+                                <div style="width: 73px; height: 6px;" class="progress ms-2 mb-2">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+                                </div>      
+                                <p style="font-size: 17px;" class="card-text d-block d-sm-none ">Bugatti is entering a new era with the Tourbillon, a 1,800 hp hybrid V16 hypercar replacing the Chiron, limited to 250 units with production starting in 2026. The brand also launched the Mistral, the fastest open-top Bugatti at 282 mph, with all 99 units sold. <a class="text-primary text-decoration-none" href="">Read more...</a> </p>
+                                <p style="font-size: 17px;" class="card-text d-none d-sm-block ">Bugatti is entering a new era with the Tourbillon, a 1,800 hp hybrid V16 hypercar replacing the Chiron, limited to 250 units with production starting in 2026. The brand also launched the Mistral, the fastest open-top Bugatti at 282 mph, with all 99 units sold. Under its new Programme Solitaire, Bugatti revealed the Brouillard, a bespoke coach-built model, while demand has filled production slots through 2029.</p>
+                                <button class="btn btn-primary mt-xxl-5 mt-xl-4 " type="submit"><i class="fa-solid fa-microphone"></i> Podcast</button>
+                                <button class="btn btn-primary mt-xxl-5 mt-xl-4 " type="submit"><i class="fa-regular fa-clock"></i> 43 mins</button>
+                                <button class="margentop btn btn-primary mt-xxl-5 mt-xl-4" type="submit"><i class="fa-solid fa-play"></i> Play Episode</button>                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card my-3 mx-auto overflow-hidden" style="max-width: 600px ; background-color: rgba(255, 255, 255, 0.916);">
+                    <div class="row g-0 my-3">
+                        <div class="col-xl-4 overflow-hidden">
+                            <img src="image/news3.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-xl-8">
+                            <div class="card-body">
+                                <h5 style="background: -webkit-linear-gradient(#000000, #002fff);
+                                          -webkit-background-clip: text;
+                                          -webkit-text-fill-color:transparent;" class="card-title text-uppercase fw-bold fs-2">tesla</h5>                                    
+                                <p class="text-capitalize mb-2">mon, may 25th 2020</p>
+                                <div style="width: 73px; height: 6px;" class="progress ms-2 mb-2">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+                                </div>      
+                                <p style="font-size: 17px;" class="card-text d-block d-sm-none ">Tesla is updating its lineup with the new Model Y L in China, a longer six-seater SUV now in deliveries. It has started building its first affordable EVs, aiming for mass production later in 2025. The Cybertruck RWD has been dropped, leaving only AWD and Cyberbeast trims. <a class="text-primary text-decoration-none" href="">Read more...</a> </p>
+                                <p style="font-size: 17px;" class="card-text d-none d-sm-block ">Tesla is updating its lineup with the new Model Y L in China, a longer six-seater SUV now in deliveries. It has started building its first affordable EVs, aiming for mass production later in 2025. The Cybertruck RWD has been dropped, leaving only AWD and Cyberbeast trims. Meanwhile, Tesla is expanding its robotaxi trials in Arizona, targeting half of the U.S. market by year’s end.</p>
+                                <button class="btn btn-primary mt-xxl-5 mt-xl-4 " type="submit"><i class="fa-solid fa-microphone"></i> Podcast</button>
+                                <button class="btn btn-primary mt-xxl-5 mt-xl-4 " type="submit"><i class="fa-regular fa-clock"></i> 43 mins</button>
+                                <button class="margentop btn btn-primary mt-xxl-5 mt-xl-4" type="submit"><i class="fa-solid fa-play"></i> Play Episode</button>                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </section><!-- /news -->
+        <section class="social-media my-5"><!-- social-media -->
+            <div style="padding: 20px 0px ;" class="container-fluid">
+                <div class="d-flex flex-wrap justify-content-center align-content-center">                  
+                    <div class="card" style="margin:30px 40px; border:2px solid black; width: 230px; height: 242px; background-color: rgba(255, 255, 255, 0.916);">
+                        <div class="card-body text-center">
+                            <h5 style="background: -webkit-linear-gradient(#000000, #002fff);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color:transparent;" class="card-title fs-3 text-primary text-capitalize mb-0 fw-bold">subscribe now</h5>
+                            <a href=""><img src="image/social1.png" class="card-img" alt="..."></a>                           
+                            <a href="#" style="" class="mb-3 fs-4 text-capitalize">go to link</a>
+                        </div>
+                    </div>
+                    <div class="card " style="margin:30px 40px; border:2px solid black; width: 230px; height: 242px; background-color: rgba(255, 255, 255, 0.916);">
+                        <div class="card-body text-center">
+                            <h5 style="background: -webkit-linear-gradient(#000000, #002fff);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color:transparent;" class="card-title fs-3 text-primary text-capitalize mb-0 fw-bold">subscribe now</h5>
+                            <a href=""><img style="width: 180px; height: 120px; margin: 13px 0;" src="image/social2.png" class="card-img" alt="..."></a>              
+                            <a href="#" style="" class="mb-3 fs-4 text-capitalize">go to link</a>
+                        </div>
+                    </div>
+                    <div class="card " style="margin:30px 40px; border:2px solid black; width: 230px; height: 242px; background-color: rgba(255, 255, 255, 0.916);">
+                        <div class="card-body text-center">
+                            <h5 style="background: -webkit-linear-gradient(#000000, #002fff);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color:transparent;" class="card-title fs-3 text-primary text-capitalize mb-0 fw-bold">subscribe now</h5>
+                            <a href=""><img style="width: 180px; height: 150px; margin: -2px 0;" src="image/social3.png" class="card-img" alt="..."></a>                
+                            <a href="#" style="" class="mb-3 fs-4 text-capitalize">go to link</a>
+                        </div>
+                    </div>
+                    <div class="card" style="margin:30px 40px; border:2px solid black; width: 230px; height: 242px; background-color: rgba(255, 255, 255, 0.916);">
+                        <div class="card-body text-center">
+                            <h5 style="background: -webkit-linear-gradient(#000000, #002fff);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color:transparent;" class="card-title fs-3 text-primary text-capitalize mb-0 fw-bold">subscribe now</h5>
+                            <a href=""><img style="width: 160px; height: 120px; margin: 13px 5px;" src="image/social4.png" class="card-img" alt="..."></a>
+                            <a href="#" style="" class="mb-3 fs-4 text-capitalize">go to link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>             
+        </section><!-- /social-media -->
+        <footer style="min-height: 68vh; background-color: rgba(0, 0, 0, 0.804);" class="w-100 pt-5 d-none d-lg-block"><!-- footer-large -->
+            <div class="container-fluid d-flex justify-content-around align-content-center border-2 border-top border-bottom border-secondary py-4 mt-2 border-opacity-50">
+                <div class="d-flex ">
+                    <img style="width: 150px; height: 150px;" src="image/logo3.png" alt="logo">
+                    <p class="text-capitalize text-light my-auto fs-5">good company</p>
+                </div>
+                <div class="d-flex ">
+                    <img style="width: 150px; height: 150px;" src="image/logo3.png" alt="logo">
+                    <p class="text-capitalize text-light my-auto fs-5">important links</p>
+                </div>
+                <div class="d-flex ">
+                    <img style="width: 150px; height: 150px;" src="image/logo3.png" alt="logo">
+                    <p class="text-capitalize text-light my-auto fs-5">vision</p>
+                </div>
+            </div>
+            <div class="container-fluid d-flex justify-content-around align-content-center border-bottom border-secondary border-2 border-opacity-50 py-4">
+                <div class="text-center text-capitalize text-light">
+                    <p>tel : 000-000-000</p>
+                    <p>address : EGYPT</p>
+                    <p class="m-0">fax : 000-000-000</p>
+                </div>
+                <div style="opacity:0.98;" class="text-center text-capitalize text-primary">
+                    <p><a class="text-decoration-none" href="">visit us</a></p>
+                    <p><a class="text-decoration-none" href="">take a look</a></p>
+                    <p class="m-0"><a class="text-decoration-none" href="">your health is more important</a></p>
+                </div>
+                <div class="text-center text-capitalize text-light">
+                    <p>services for all</p>
+                    <p>provide best services</p>
+                    <p class="m-0">you will be better than before</p>
+                </div>
+            </div>
+            <div style="font-size: 26px; opacity:0.4;" class="container my-2 py-4 fw-bold text-center text-capitalize text-primary">
+                &copy; 2025 car-space. all rights reserved. designed by <span class="text-uppercase">ahmed abdel fattah elbanna</span>
+            </div>
+        </footer><!-- /footer-large -->
+        <footer style="min-height: 68vh; background-color: rgba(0, 0, 0, 0.804);" class="w-100 pt-5 d-block d-lg-none"><!-- footer-small -->
+            <div class=" border-2 border-top border-bottom border-secondary py-4 mt-2 border-opacity-50 d-flex flex-column text-center text-light">
+                <img style="width: 150px; height: 150px;" class="m-auto" src="image/logo3.png" alt="logo">
+                <p style="margin-top: -15px;" class="text-capitalize text-light fs-1 fw-bold mb-2">good company</p>
+                <p>tel : 000-000-000</p>
+                <p>address : EGYPT</p>
+                <p class="m-0">fax : 000-000-000</p>
+            </div>
+            <div class="py-4 d-flex flex-column text-center text-light">
+                <img style="width: 150px; height: 150px;" class="m-auto" src="image/logo3.png" alt="logo">
+                <p style="margin-top: -15px;" class="text-capitalize text-light fs-1 fw-bold mb-2">important links</p>
+                <p><a class="text-decoration-none" href="">visit us</a></p>
+                    <p><a class="text-decoration-none" href="">take a look</a></p>
+                    <p class="m-0"><a class="text-decoration-none" href="">your health is more important</a></p>
+            </div>
+            <div class=" border-2 border-top border-bottom border-secondary py-4 mt-2 border-opacity-50 d-flex flex-column text-center text-light">
+                <img style="width: 150px; height: 150px;" class="m-auto" src="image/logo3.png" alt="logo">
+                <p style="margin-top: -15px;" class="text-capitalize text-light fs-1 fw-bold mb-2">vision</p>
+                <p>services for all</p>
+                <p>provide best services</p>
+                <p class="m-0">you will be better than before</p>
+            </div>
+            <div style="font-size: 22px; opacity:0.4;" class="container my-2 py-4 fw-bold text-center text-capitalize text-primary">
+                &copy; 2025 car-space. all rights reserved. designed by <span class="text-uppercase">ahmed abdel fattah elbanna</span>
+            </div>
+        </footer><!-- /footer-small -->
+
+
+        <script src="js/script.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
+                                    
